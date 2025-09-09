@@ -10,8 +10,16 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    res.send('Welcome to the API');
+    res.sendFile(__dirname + '/frontend/index.html');
 });
+
+
+// static files
+app.get('/style.css', (req, res) => {
+    res.sendFile(__dirname + '/static/style.css');
+});
+
+
 
 // Example route to get all users
 app.get('/users', (req, res) => {
