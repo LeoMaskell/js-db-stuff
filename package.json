@@ -2,14 +2,16 @@
   "name": "js-db-stuff",
   "version": "1.0.0",
   "description": "a simple node project to practise connecting to databases",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Leo Maskell",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "sqlite3": "^5.1.7"
   }
 }
